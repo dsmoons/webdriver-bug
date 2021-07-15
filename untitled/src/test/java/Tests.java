@@ -174,7 +174,7 @@ public class Tests {
         driver.quit();
     }
 
-    private static ChromeDriver getChromeDriver(Boolean headless) {
+    private static ChromeDriver getChromeDriver(@SuppressWarnings("SameParameterValue") Boolean headless) {
         WebDriverManager.chromedriver().setup();
         var chromeOptions = new ChromeOptions();
         chromeOptions.setCapability("safebrowsing.enabled", "false");
